@@ -6,7 +6,7 @@ import { io } from "socket.io-client";
 import { Peer } from "peerjs";
 // import { v4 } from "uuid";
 
-const socket = io("http://localhost:5555");
+const socket = io("https://livevideoapp.onrender.com");
 function App() {
   const [info, setInfo] = useState({ name: "", roomId: "" });
   const [metaData, setMetaData] = useState([]);
