@@ -165,10 +165,10 @@ const Video = ({ socket, myPeer, metaData, setStreamId, streamId,setOtherName,pe
 
   const toggleAudio = () => {
     let audioTrack = myVideo.current.srcObject.getTracks().find((track) => track.kind === "audio");
-
+    console.log(audioTrack)
     if (audioTrack.enabled) {
       audioTrack.enabled = false;
-      setMute(true);
+      setMute(true); 
 
     } else {
       audioTrack.enabled = true;
