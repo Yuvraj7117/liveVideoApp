@@ -4,14 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start":"node index.js",
+    "start": "node index.js",
     "dev": "nodemon index.js",
-    "peerServer":"nodemon peerServer.js"
- 
+    "peerServer": "nodemon peerServer.js"
   },
-  "author": "", 
-  "license": "ISC",
+  "author": "",
+  "license": "ISC",               
   "dependencies": {
+    
     "peer": "^1.0.0"
   }
 }
