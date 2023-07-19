@@ -1,0 +1,17 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  
+    "dev": "nodemon index.js",
+    "peerServer":"nodemon peerServer.js"
+ 
+  },
+  "author": "", 
+  "license": "ISC",
+  "dependencies": {
+    "peer": "^1.0.0"
+  }
+}
