@@ -5,7 +5,7 @@ import { useEffect, useState} from "react";
 import { io } from "socket.io-client";
 import { Peer } from "peerjs";
 // import { v4 } from "uuid";
-
+// https://livevideoapp.onrender.com
 const socket = io("https://livevideoapp.onrender.com");
 function App() {
   const [info, setInfo] = useState({ name: "", roomId: "" });

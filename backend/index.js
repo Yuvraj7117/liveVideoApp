@@ -1,6 +1,8 @@
 const express = require("express");
 const app = express();
-const port = 5555;
+const dotenv = require("dotenv");
+dotenv.config();
+const port = process.env.PORT || 7777;
 const http = require("http");
 const server = http.createServer(app);
 const { Server } = require("socket.io")
@@ -8,7 +10,7 @@ const { Server } = require("socket.io")
           
 const io = new Server(server, {
   cors: {
-    origin: "https://niranjanlivevideoapp.netlify.app/",
+    origin: "https://livevideoapp.onrender.com",
     methods: ["GET", "POST"],
   },
 }); 
