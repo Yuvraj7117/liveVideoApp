@@ -9,11 +9,7 @@ const { Server } = require("socket.io")
  
   //  https://livevideoapp.onrender.com       
 const io = new Server(server, {
-  cors: {
-    origin:
-      "https://64b7deaa1872d10d0ea347c4--warm-daffodil-3d9165.netlify.app/",
-    methods: ["GET", "POST"],
-  },
+  cors: { origin: "*", methods: ["GET", "POST"] },
 }); 
  
 io.on("connection", (socket) => {
